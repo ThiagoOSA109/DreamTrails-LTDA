@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="IMG/DreamTrails_Icone.webp" type="image/x-icon">
+    <title>DreamTreails LTDA</title>
+</head>
+<body class="body">
+    <div class="container1  ">
+        <!--Nav-->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="navbar">
+            <div class="container-fluid navbar1">
+              <a class="navbar-brand" href="#main"><img src="IMG/DreamTrails_LOGO_1.webp" alt="LOGO" class="logo"></a>
+              <button class="btn_nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="menu_btn">&#9776;</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav_content">
+                    <a class="nav-link" href="#sobre_nos">Sobre nós</a>
+                  </li>
+                  <li class="nav-item nav_content">
+                    <a class="nav-link" href="#footer">Contate-nos</a>
+                  </li> 
+                  <li class="nav-item nav_content">
+                    <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+          </nav>
+          <!---->
+          
+
+          <!--login-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content popup">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 login" id="exampleModalLabel">login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login">
+                        <fieldset class="form_parts">
+                            <label for="email">Email: <input type="email" id="email" placeholder="Email"></label>
+                            <label for="senha">Senha: <input type="password" id="senha" placeholder="Senha" minlength="6" required></label>
+                        </fieldset>
+                        <fieldset class=" terms">
+                            <label for="terms"><input type="checkbox" id="terms" required>I agree with the <a href="">terms and conditions</a></label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" form="login" class="btn btn-primary" data-bs="modal">Enter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+          
+          <!--Burger Menu-->
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="sidemenu">
+                <li class="offcanvas-list sidemenu_item"><a class="offcanvas-link sidemenu_text" aria-current="page" href="#">Sobre nós</a></li>
+                <li class="offcanvas-list sidemenu_item"><a class="offcanvas-link sidemenu_text" href="#">Contate-nos</a></li>
+                <li class="offcanvas-list sidemenu_item"><a class="offcanvas-link sidemenu_text" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a></li>
+              </ul>
+            </div>
+          </div>
+          <!---->
+        <main class="main" id="main">
+          <div class="introduction parallax">
+            <h1 class="title">Tenha um site só seu hoje!</h1>
+            <div class="webpage">
+              <img src="IMG/Webpage_Demonstration.webp" alt="" class="webpage_img">
+              <p class="webpage_text">Apresentamos sites perfeitos para alavancar seu negócio! Com design moderno e intuitivo, nossa solução digital personalizada encantará seus clientes e impulsionará suas vendas. Invista no seu sucesso e contate-nos hoje mesmo!</p>
+            </div>
+          </div>
+          <div id="carouselExample" class="carousel slide carousel_main">
+            <div class="carousel-inner">
+              <div class="carousel-item carousel_item active">
+                <h1>Você quer aumentar sua renda?</h1>
+                <img src="IMG/Aumentar_renda_photo_1.webp" class="d-block mx-auto img" alt="Aumentar_renda_photo">
+                <P class="carousel_text">Ao criar um site personalizado em nossa empresa, você amplia seu alcance, atrai mais clientes e aumenta suas oportunidades de vendas.</P>
+              </div>
+              <div class="carousel-item carousel_item">
+                <h1>Nossa Equipe</h1>
+                <img src="IMG/Tecnico_photo-transformed_1.webp" class="d-block mx-auto img" alt="Tecnico_photo">
+                <p class="carousel_text">Nossa equipe de desenvolvimento web é altamente qualificada e experiente, criando soluções digitais personalizadas para seu negócio.</p>
+              </div>
+              <div class="carousel-item carousel_item">
+                <h1 >Contrato</h1>
+                <img src="IMG/contrato_photo-transformed_1.webp" class="d-block mx-auto img" alt="contrato_photo">
+                <p class="carousel_text">Fazer um contrato com nossa empresa de desenvolvimento web pode trazer inúmeros benefícios para você e seu negócio.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev carousel_btn" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <img src="IMG/btn_back.webp" alt="Backwards button" class="carousel_btn_img">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel_btn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <img src="IMG/btn_foward.webp" alt="Foward button" class="carousel_btn_img">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="parallax"></div>
+          <div class="Sobre_nos" id="sobre_nos">
+            <h1>Sobre-nós</h1>
+            <p>Nossa empresa de desenvolvimento web surgiu da paixão compartilhada por tecnologia e inovação, quando um grupo de entusiastas determinados se uniu com um sonho em comum. Inicialmente, éramos apenas alguns visionários trabalhando em uma pequena sala, mas nossa dedicação e trabalho árduo nos impulsionaram a alcançar o sucesso. Ao enfrentar os desafios do mercado e aprimorar nossas habilidades, nossa reputação cresceu, atraindo uma base de clientes cada vez mais diversificada em diferentes setores.
+              <br><br>
+              Cada projeto bem-sucedido e cada cliente satisfeito impulsionaram nossa evolução, transformando-nos em uma equipe talentosa e confiável. Olhamos para o nosso passado com orgulho, mas estamos entusiasmados com o futuro, ansiosos para enfrentar novos desafios e criar soluções digitais ainda mais impressionantes. Nossa trajetória é marcada por determinação e inovação, e estamos comprometidos em continuar crescendo e transformando o cenário digital com nosso trabalho apaixonado e soluções sob medida.</p>
+          </div>
+          <div class="parallax"></div>
+        </main>
+        <footer id="footer">
+          <div>
+            <p class="footer_content"><a href="https://br.linkedin.com/"><img src="IMG/LinkedIn_logo.webp" alt="linkedin logo" class="LinkedIn_logo"></a></p>
+            <p class="footer_content">DreamTrails@gmail.com</p>
+            <p class="footer_content">(53) 3313-7010</p>
+          </div>
+        </footer>
+    </div>
+   
+
+    <script>
+      var n = window.pageYOffset;
+      window.onscroll = function() {
+      var f = window.pageYOffset;
+        if (n > f) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-500px";
+        }
+        n = f;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
